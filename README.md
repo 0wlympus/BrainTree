@@ -2,7 +2,7 @@
 
 The Braintree PHP library provides integration access to the Braintree Gateway.
 
-![alt tag](https://www.dropbox.com/home?preview=Capture+d%E2%80%99%C3%A9cran+2016-06-20+%C3%A0+13.08.01.png)
+![alt tag](https://www.dropbox.com/s/33oua1s2nsez5z7/Capture%20d%E2%80%99%C3%A9cran%202016-06-20%20%C3%A0%2013.08.01.png?dl=0)
 
 ## Dependencies
 
