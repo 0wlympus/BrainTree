@@ -18,32 +18,24 @@ The following PHP extensions are required:
 
 ## Quick Start Example
 
+Changes your values in :
+
+```
+BrainTree/config_BT.php
+```
+
+=> [Get your ID here](https://articles.braintreepayments.com/control-panel/important-gateway-credentials#api-credentials)
+
+
 ```php
 <?php
 
-require_once 'PATH_TO_BRAINTREE/lib/Braintree.php';
+require_once __DIR__.'/lib/Braintree.php';
 
 Braintree_Configuration::environment('sandbox');
 Braintree_Configuration::merchantId('your_merchant_id');
 Braintree_Configuration::publicKey('your_public_key');
 Braintree_Configuration::privateKey('your_private_key');
-
-$result = Braintree_Transaction::sale([
-    'amount' => '1000.00',
-    'paymentMethodNonce' => 'nonceFromTheClient',
-    'options' => [ 'submitForSettlement' => true ]
-]);
-
-if ($result->success) {
-    print_r("success!: " . $result->transaction->id);
-} else if ($result->transaction) {
-    print_r("Error processing transaction:");
-    print_r("\n  code: " . $result->transaction->processorResponseCode);
-    print_r("\n  text: " . $result->transaction->processorResponseText);
-} else {
-    print_r("Validation errors: \n");
-    print_r($result->errors->deepAll());
-}
 ```
 
 ## HHVM Support
@@ -52,7 +44,7 @@ The Braintree PHP library will run on HHVM >= 3.4.2.
 
 ## Legacy PHP Support
 
-Version [2.40.0](https://github.com/braintree/braintree_php/releases/tag/2.40.0) is compatible with PHP 5.2 and 5.3. You can find it on our releases page.
+Version [2.40.0](https://github.com/braintree/braintree_php/releases/tag/2.40.0) is compatible with PHP 5.2 and 5.3. You can find it on the releases page.
 
 ## Documentation
 
