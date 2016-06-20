@@ -2,6 +2,8 @@
 
 The Braintree PHP library provides integration access to the Braintree Gateway.
 
+![alt tag](https://www.dropbox.com/home?preview=Capture+d%E2%80%99%C3%A9cran+2016-06-20+%C3%A0+13.08.01.png)
+
 ## Dependencies
 
 PHP version >= 5.4.0 is required.
